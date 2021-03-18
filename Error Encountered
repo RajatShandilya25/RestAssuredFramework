@@ -1,0 +1,9 @@
+1.
+TestNG by default disables loading DTD from unsecured Urls. If you need to explicitly
+ load the DTD from a http url, please do so by using the
+ JVM argument [-Dtestng.dtd.http=true]
+
+Solution:
+Select Project > Run from top menu > Edit Configuration > Templates > TestNG
+> VM Options: -ea -Dtestng.dtd.http=true > Apply > Save
+
